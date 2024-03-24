@@ -1,6 +1,6 @@
 'use server';
 
-import { signIn } from '@/auth';
+import { signIn, signOut } from '@/auth';
 import { AuthError } from 'next-auth';
 
 export async function authenticate(
@@ -8,8 +8,11 @@ export async function authenticate(
     formData: FormData,
 ) {
     try {
+        console.log('formData');
+        console.log(formData);
         await signIn('credentials', formData);
     } catch (error) {
+        console.log('error login pog....',error);
         if (error instanceof AuthError) {
         switch (error.type) {
             case 'CredentialsSignin':
@@ -20,4 +23,8 @@ export async function authenticate(
         }
         throw error;
     }
+}
+
+export async function logOut(){
+    await signOut();
 }

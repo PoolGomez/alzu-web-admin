@@ -1,5 +1,5 @@
 
-// import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import styles from '@/app/ui/home.module.css';
 import { lusitana } from '@/app/ui/fonts';
@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
+    <div className="flex min-h-screen flex-col p-6">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
         {/* <AcmeLogo /> */}
       </div>
@@ -33,7 +33,7 @@ export default function Page() {
             <strong>
             <span className="w-5 md:w-6" >Log in</span> 
             </strong>
-            {/* <ArrowRightIcon className="w-5 md:w-6" /> */}
+            <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
 
 
@@ -56,6 +56,6 @@ export default function Page() {
           />
         </div>
       </div>
-    </main>
+    </div>
   );
 }
