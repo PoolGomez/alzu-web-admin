@@ -32,8 +32,9 @@ export default function LoginPage(){
                 </Link>
 
                 <p className="2xl:px-20">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  suspendisse.
+                  {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  suspendisse. */}
+                  Sistema de Pedidos y Facturación
                 </p>
 
                 <span className="mt-15 inline-block">
@@ -163,9 +164,13 @@ export default function LoginPage(){
 
             <div className="w-full border-stroke dark:border-strokedark xl:w-1/2 xl:border-l-2">
               <div className="w-full p-4 sm:p-12.5 xl:p-17.5">
-                <span className="mb-1.5 block font-medium">Start for free</span>
+                <span className="mb-1.5 block font-medium">
+                  {/* Start for free */}
+                  Comienza gratis
+                  </span>
                 <h2 className="mb-9 text-2xl font-bold text-black dark:text-white sm:text-title-xl2">
-                  Sign In to TailAdmin
+                Inicia sesión en ALZU
+                  {/* Sign In to TailAdmin */}
                 </h2>
                 <LoginForm />
                 

@@ -54,7 +54,8 @@ export default function LoginForm(){
 
                   <div className="mb-6">
                     <label className="mb-2.5 block font-medium text-black dark:text-white" htmlFor="password">
-                      Re-type Password
+                      {/* Re-type Password */}
+                      Contraseña
                     </label>
                     <div className="relative">
                       <input
@@ -150,9 +151,11 @@ export default function LoginForm(){
 
                   <div className="mt-6 text-center">
                     <p>
-                      Don’t have any account?{" "}
-                      <Link href="/auth/signup" className="text-primary">
-                        Sign Up
+                      {/* Don’t have any account?{" "} */}
+                      ¿No tienes ninguna cuenta?{" "}
+                      <Link href="/register" className="text-primary">
+                        {/* Sign Up */}
+                        Regístrate
                       </Link>
                     </p>
                   </div>
@@ -167,7 +170,8 @@ function LoginButton() {
       className="mt-4 w-full" 
     //   className='w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90'
       aria-disabled={pending}>
-        Log in 
+        {/* Log in  */}
+        Iniciar Sesión
         {/* <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" /> */}
       </Button>
     );

@@ -5,6 +5,7 @@ import DropdownMessage from "./DropdownMessage";
 import DropdownNotification from "./DropdownNotification";
 import DropdownUser from "./DropdownUser";
 import Image from "next/image";
+import AcmeLogo from "@/app/ui/milogo";
 
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
@@ -58,12 +59,14 @@ const Header = (props: {
           {/* <!-- Hamburger Toggle BTN --> */}
 
           <Link className="block flex-shrink-0 lg:hidden" href="/">
-            <Image
+            {/* <img
               width={32}
               height={32}
               src={"/images/logo/logo-icon.svg"}
+                  // src={"/images/user/user-01.png"}
               alt="Logo"
-            />
+            /> */}
+            <AcmeLogo color="green"/>
           </Link>
         </div>
 
@@ -110,11 +113,11 @@ const Header = (props: {
             {/* <!-- Dark Mode Toggler --> */}
 
             {/* <!-- Notification Menu Area --> */}
-            <DropdownNotification />
+            {/* <DropdownNotification /> */}
             {/* <!-- Notification Menu Area --> */}
 
             {/* <!-- Chat Notification Area --> */}
-            <DropdownMessage />
+            {/* <DropdownMessage /> */}
             {/* <!-- Chat Notification Area --> */}
           </ul>
 

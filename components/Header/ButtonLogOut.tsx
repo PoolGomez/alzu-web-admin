@@ -28,7 +28,8 @@ export default function ButtonLogOut(){
                   fill=""
                 />
               </svg>
-              Log Out
+              {/* Log Out */}
+              Cerrar Sesión
             </button>
             </>
     )
